@@ -15,7 +15,7 @@ export const StatIcon: React.FC<StatIconProps> = ({ stat, size=30, style }) => {
     <img 
       loading='lazy'
       alt={`${_stat} icon`}
-      src={`/statImages/${_stat}_icon.png`}
+      src={`/UmaDeck/statImages/${_stat}_icon.png`}
       style={{width:size, height:size, backgroundColor:tintColor, borderRadius:border, ...style }}
     />        
   )
@@ -29,7 +29,7 @@ type SupportImageProps = {
 
 export const SupportImage: React.FC<SupportImageProps> = ({ card, size=60, style })=>{
   // const uri = `https://euophrys.github.io/uma-tiers/cardImages/support_card_s_${card.support_id}.png`
-  const uri = `/cardImages/support_card_s_${card.support_id}.png`
+  const uri = `/UmaDeck/cardImages/support_card_s_${card.support_id}.png`
   return (
     <div style={{ width:size, height:size, ...style }}>
       <img 

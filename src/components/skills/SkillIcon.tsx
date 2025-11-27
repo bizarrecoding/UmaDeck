@@ -9,7 +9,7 @@ export const SkillImage: React.FC<SkillImageProps> = ({ id, size, style })=>{
     <img 
       alt={`Skill ${id}`}
       loading='lazy'
-      src={`/skillImages/${id}.png`}
+      src={`/UmaDeck/skillImages/${id}.png`}
       style={{width:size, height:size, aspectRatio:1,...style}}  
     />
   )
