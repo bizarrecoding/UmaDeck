@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Capture the path and redirect to index.html with a query parameter
+      var path = window.location.pathname.replace(/\/$/, "");
+      var hash = window.location.hash;
+      var search = window.location.search;
+      
+      // Redirect to index.html with the original path preserved
+      window.location.replace("/UmaDeck/index.html?redirect=" + encodeURIComponent(path) + hash + search);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
